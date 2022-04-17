@@ -1,0 +1,332 @@
+
+*{  font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+  
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5%;
+   background-image: url('img/clouds.jpg');
+   background-size: cover;
+   background-position: center;
+
+}
+header{
+    width: 100%;
+    height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ padding: 1rem;
+
+}
+header .logo{
+    display: flex;
+}
+header .logo img{
+    width: 60px;
+}
+header .logo h1{
+    font-size: 25px;
+}
+header .search_place{
+    display: flex;
+    align-items: center;
+    
+   
+}
+header .search_place .search{
+    padding: 15px;
+   
+  box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(110, 110, 110, 0.25);
+   backdrop-filter: blur(10px);
+    border-top-right-radius:  1px solid rgba(255, 255, 255, 0.18);;
+    border-bottom-right-radius:  1px solid rgba(255, 255, 255, 0.18);;
+    cursor: pointer;
+}
+header .search_place .inp{
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.3);
+    background-color: rgba(110, 110, 110, 0.25);
+     backdrop-filter: blur(10px);
+   color: #fff;
+    padding: 15px;
+    padding-left: 30px;
+    border-top-left-radius: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom-left-radius: 1px solid rgba(255, 255, 255, 0.18);
+}
+header .search_place .inp::placeholder{
+    color: #333;
+}
+.weather_place{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+.double{
+    flex: 1 1 30rem;
+}
+ .info_place{
+    display: flex;
+    flex-direction: column;
+ 
+  padding: 2rem;
+  border-radius: 5px;
+  max-height: 60vh;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(110, 110, 110, 0.25);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+}
+ .info_place .time_place{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ .info_place .time_place .day_info{
+    padding: .5rem;
+}
+ .info_place .time_place .time{
+    font-size: 60px;
+    color:   #6495ED;
+    margin-bottom: 10px;  
+
+}
+ .card{
+    padding: 3rem;
+   flex: 2 1 30rem;
+   border-radius: 5px;
+
+  max-height: 60vh;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(110, 110, 110, 0.25);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.adds{
+    display: flex;
+    flex-direction: column;
+  
+    padding: 2rem ;
+}
+
+.next_data{
+   
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     gap: 1rem;
+   
+ 
+     
+ }
+ .heading{
+     padding: 1rem;
+     
+ }
+ .heading h2{
+     font-size: 30px;
+ }
+.adds .next_data{
+   flex: 1 1 30rem;
+    max-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: .5rem;
+
+    
+}
+.next_data .item_place{
+    display: flex;
+    gap: .5rem;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.next_data .item2_place{
+    display: flex;
+    gap: .5rem;
+   flex-wrap: nowrap;
+   padding: .5rem;
+   justify-content: center;
+   
+  
+}
+.next_data .item2_place  .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 75px;
+   height: 125px;
+  
+   padding: 1.5rem;
+   border: 1px solid rgba(255, 255, 255, 0.18);
+   box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.3);
+   background-color: rgba(110, 110, 110, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.next_data .item2_place  .item h2{
+   text-align: center;
+   font-size: 12px;
+}
+
+
+
+.next_data .item_place .box{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.next_data .item_place .box .item{
+   display: flex;
+
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    border-radius: 100px;
+    width: 75px;
+   height: 125px;
+padding: 1.5rem;
+border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.3);
+background-color: rgba(110, 110, 110, 0.25);
+ backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
+}
+
+.next_data .item_place .box .item .img{
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+
+    background-position: center;
+  
+   
+}
+
+#map { 
+ 
+    height: 200px;
+width: 250px; 
+top: 0;
+border-radius: 20px;
+}
+.next_data  .item2_place .item .img{
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+
+    background-position: center;
+    /* background-image: url('http://openweathermap.org/img/wn/10d@2x.png'); */
+}
+.dop{
+    padding-top: 70px;
+}
+.card{
+    color: #fff;
+    padding: 2rem;
+}
+.card .temp_place .temp{
+    color:   #6495ED;
+    font-size: 60px;
+   
+    font-weight: bold;
+   
+    z-index: 1000;
+    margin-bottom: 50px;
+
+}
+.card .desc{
+    font-size: 30px;
+}
+.card .feels{
+    font-size: 20px;
+}
+.card .temp_place{
+    width: 300px;
+    height: 35vh;
+    background-image: url('img/icon.png');
+background-size: cover;
+background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+@media(max-width:991px){
+    html{
+        font-size:55%;
+       
+    
+    }
+   
+    .header{
+        padding: 2rem;
+
+    }
+}
+@media(max-width:768px){
+     
+      .header{
+        padding: 2rem;
+
+    }
+   
+    .next_data .item2_place{
+        padding: 4rem;
+    }
+  
+}
+
+@media(max-width:450px){
+    html{
+        font-size:50%;
+        
+    
+    
+    }
+   
+    .header{
+        padding: 2rem;
+
+    }
+   .adds{
+       padding: 5rem;
+   }
+   .card{
+      min-width: 530px;
+   }
+   .card .temp_place{
+       padding: 2rem;
+   }
+ 
+}

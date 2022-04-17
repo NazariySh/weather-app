@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" href="img/weather_icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weater app</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+<body>
+  
+    <header>
+        <div class="logo">
+            <img src="img/sunny_foggy_color.png" alt="">
+            <h1> Daily Weather</h1> 
+        </div>
+       
+    <div class="search_place">
+       <input type="text" id="cityField" class="inp" placeholder="Enter city name...">
+       <div class="search" id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+   </header>
+   <main>
+    <div class="weather_place">
+        <div class="double">
+           <div class="info_place">
+    <div class="time_place"> 
+        <div class="day_info">
+            <h2 class="time" id="time"></h2> 
+            <p class="info" id="info"></p>
+            <p class="countr" id="countr"></p>
+            
+        </div>
+         
+         <div id="map"></div>
+        </div>
+        
+</div>
+          
+<div class="next_data">
+    <div class="heading"><h2>Next days</h2>
+    </div>
+    <div class="item2_place">
+        <div class="item" ><h2 id="dateOfDay1"></h2><div class="img" id="img1"></div><h3 id="day1"></h3></div>
+        <div class="item" > <h2 id="dateOfDay2"> </h2><div class="img" id="img2"></div><h3 id="day2"></h3></div>
+        <div class="item" ><h2 id="dateOfDay3"></h2> <div class="img" id="img3"></div><h3 id="day3"></h3></div>
+        <div class="item" ><h2 id="dateOfDay4"></h2> <div class="img" id="img4"></div><h3 id="day4"></h3></div>
+        <div class="item" ><h2 id="dateOfDay5"></h2> <div class="img" id="img5"></div><h3 id="day5"></h3></div>
+        <div class="item"><h2 id="dateOfDay6"></h2> <div class="img" id="img6"></div><h3 id="day6"></h3></div>
+       
+    </div>
+
+</div>
+        </div>  
+
+         
+          
+           
+            
+    
+        <div class="card">
+            <div class="temp_place " id="temp_place">
+                <div class="temp" id="temp"></div>
+          
+            </div>
+           
+           <div class="desc" id="desc"></div>
+           <div class="feels" id="feels"></div>
+           <p class="dop" id="dop"></p>
+        </div>
+       
+    </div>
+    <section class="adds">
+       
+      
+    <div class="next_data">
+        <div class="heading"><h2>Hourly</h2>
+        </div>
+        <div class="item_place">
+            <div class="box">
+        <div class="item"><h2 id="p1">0:00</h2> <div class="img" id="hourImg1"></div><h3 id="hour1"></h3></div>
+        <div class="item"><h2 id="p2">2:00</h2><div class="img" id="hourImg2" ></div><h3 id="hour2"></h3></div>
+        <div class="item"><h2 id="p3">4:00</h2><div class="img" id="hourImg3" ></div><h3 id="hour3"></h3></div>
+        <div class="item"><h2 id="p4">6:00</h2><div class="img" id="hourImg4"></div><h3 id="hour4"></h3></div>
+        <div class="item"><h2 id="p5">8:00</h2><div class="img" id="hourImg5"></div><h3 id="hour5"></h3></div>
+        <div class="item"><h2 id="p6">10:00</h2><div class="img" id="hourImg6"></div><h3 id="hour6"></h3></div>
+        <div class="item"><h2 id="p7">12:00</h2><div class="img" id="hourImg7"></div><h3 id="hour7"></h3></div>
+        <div class="item"><h2 id="p8">14:00</h2><div class="img" id="hourImg8"></div><h3 id="hour8"></h3></div>
+        <div class="item"><h2 id="p9">16:00</h2><div class="img" id="hourImg9"></div><h3 id="hour9"></h3></div>
+        <div class="item" ><h2 id="p10">18:00</h2><div class="img" id="hourImg10"></div><h3 id="hour10"></h3></div>
+        <div class="item" ><h2 id="p11" >20:00</h2><div class="img" id="hourImg11"></div><h3 id="hour11"></h3></div>
+        <div class="item" ><h2 id="p12">22:00</h2><div class="img" id="hourImg12"></div><h3 id="hour12"></h3></div>
+            </div>
+       
+       
+        </div>
+    </div>
+    </section>
+    
+   
+   </main>
+
+  
+    
+   
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="main.js">
+
+
+    </script>
+</body>
+</html>
